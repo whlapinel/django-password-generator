@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>homepage</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    
+</head>
+
+<body>
+    <div class="container text-center">
+        <h1> This is the new homepage </h1>
+
+        <form action="password">
+            <select name="length">
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12" selected="selected">12</option>
+                <option value="13">13</option>
+                <option value="14">14</option>
+                <option value="15">15</option>
+                <option value="16">16</option>
+
+            </select>
+            <br>
+            <input type="checkbox" name="uppercase"> Uppercase
+            <br>
+            <input type="checkbox" name="numbers"> Numbers
+            <br>
+            <input type="checkbox" name="special"> Special Characters
+            <br>
+            <input type="submit" value="Generate Password" class="btn btn-primary">
+            <br>
+            <br>
+
+
+        </form>
+    </div>
+    <a href="{% url 'about' %}"><button>About</button></a>
+</body>
+
+</html>
